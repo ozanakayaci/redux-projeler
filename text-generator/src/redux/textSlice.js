@@ -9,7 +9,7 @@ export const textSlice = createSlice({
       state.paras = action.payload;
     },
     changeFormat: (state, action) => {
-      action.payload === "No"
+      action.payload === "text"
         ? (state.format = "text")
         : (state.format = "html");
     },
