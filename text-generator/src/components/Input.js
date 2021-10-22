@@ -36,7 +36,7 @@ function Input() {
       <div className="input">
         <div>
           <label>Paragraphs</label>
-          <input type="number" onChange={onChangeInput} value={paras} />
+          <input type="number" onChange={onChangeInput} min="1" value={paras} />
         </div>
         <div>
           <label>Include HTML</label>
