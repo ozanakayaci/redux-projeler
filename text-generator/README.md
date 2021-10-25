@@ -6,6 +6,7 @@
 
 - [React.js](https://reactjs.org/)
 - [Redux.js](https://redux.js.org/)
+- [Bacon ipsum API](https://baconipsum.com/)
 
 ## Getting Started
 
