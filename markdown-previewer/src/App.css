@@ -1,0 +1,34 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main {
+  display: flex;
+}
+.header {
+  font-size: 1.5em;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 10px;
+  font-size: 1.5em;
+}
+.preview {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  font-size: 1.5em;
+  background-color: black;
+  color: white;
+}
+.preview textarea {
+  color: red;
+  background-color: black;
+}
+body {
+  background-color: #0d1117;
+  color: white;
+}

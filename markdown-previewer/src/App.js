@@ -6,10 +6,12 @@ import Preview from "./components/Preview";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Header />
-      <Input />
-      <Preview />
+      <div className="main">
+        <Input />
+        <Preview />
+      </div>
     </div>
   );
 }
