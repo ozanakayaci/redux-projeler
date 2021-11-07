@@ -8,7 +8,9 @@ function Preview() {
 
   return (
     <div className="preview">
-      <div>Previewer</div>
+      <div>
+        Preview<span>er</span>
+      </div>
       <div className="output">
         <ReactMarkdown children={text} remarkPlugins={[remarkGfm]} />
       </div>

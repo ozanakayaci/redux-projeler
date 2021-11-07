@@ -28,15 +28,19 @@
   margin-top: 15px;
   padding-left: 10px;
 }
+.preview div span {
+  color: black;
+}
 .input textarea {
   min-width: 700px;
   height: 80vh;
   padding: 15px 0 0 15px;
   border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 3px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 .input div:first-child {
   font-size: 2.75em;
-  font-weight: bold;
   padding-right: 10px;
 }
 .output {
@@ -45,6 +49,8 @@
   padding-left: 10px;
   border-radius: 15px;
   overflow: auto;
+  -webkit-box-shadow: 5px 5px 3px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 /* width */
 ::-webkit-scrollbar {

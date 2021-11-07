@@ -15,7 +15,7 @@ function Input() {
 
   return (
     <div className="input">
-      <div>Markdown</div>
+      <div>#Markdown</div>
       <textarea
         onChange={handleChange}
         name=""
