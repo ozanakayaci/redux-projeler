@@ -1,34 +1,56 @@
 .App {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
 .main {
   display: flex;
-}
-.header {
-  font-size: 1.5em;
 }
 .input {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   margin: 10px;
-  font-size: 1.5em;
+  min-width: 700px;
+  height: 100vh;
 }
 .preview {
   display: flex;
   flex-direction: column;
   margin: 10px;
-  font-size: 1.5em;
-  background-color: black;
-  color: white;
+  height: 100vh;
+  min-width: 700px;
+  max-width: 700px;
 }
-.preview textarea {
+.preview div:first-child {
   color: red;
-  background-color: black;
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 15px;
+  padding-left: 10px;
 }
-body {
-  background-color: #0d1117;
-  color: white;
+.input textarea {
+  min-width: 700px;
+  height: 100vh;
+  padding: 15px 0 0 15px;
+  border-radius: 15px;
+}
+.input div:first-child {
+  font-size: 2.75em;
+  font-weight: bold;
+  padding-right: 10px;
+}
+.output {
+  border: 1px solid black;
+  height: 100%;
+  padding-left: 10px;
+  border-radius: 15px;
+  overflow: auto;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
 }
