@@ -1,10 +1,17 @@
-import React from "react";
+import { useSelector } from "react-redux";
+
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 function Preview() {
+  const text = useSelector((state) => state.text.text);
+
   return (
     <div className="preview">
-      <div>Preview</div>
-      <textarea name="" id="" cols="50" rows="10"></textarea>
+      <div>Previewer</div>
+      <div className="output">
+        <ReactMarkdown children={text} remarkPlugins={[remarkGfm]} />
+      </div>
     </div>
   );
 }
