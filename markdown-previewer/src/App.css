@@ -1,25 +1,60 @@
 .App {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
 }
 .main {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.help {
+  display: flex;
+  justify-content: flex-end;
+
+  width: 100%;
+}
+
+.help-button {
+  align-self: flex-end;
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 10px 10px #646464;
+  background-color: #ffeeb4;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-out;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(100, 84, 84);
+  border-radius: 20px;
+}
+.help-button:hover {
+  box-shadow: 7px 7px #646464;
+}
+.active {
+  box-shadow: none;
 }
 .input {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   margin: 10px;
-  min-width: 700px;
+  min-width: 100%;
+  max-width: 500px;
   height: 80vh;
+  resize: none;
 }
 .preview {
   display: flex;
   flex-direction: column;
   margin: 10px;
   height: 80vh;
-  min-width: 700px;
-  max-width: 700px;
+  min-width: 100%;
+  max-width: 500px;
 }
 .preview div:first-child {
   color: red;
@@ -30,14 +65,17 @@
 }
 .preview div span {
   color: black;
+  font-weight: 100;
 }
 .input textarea {
-  min-width: 700px;
   height: 80vh;
   padding: 15px 0 0 15px;
   border-radius: 15px;
   -webkit-box-shadow: 5px 5px 3px 8px rgba(0, 0, 0, 0.3);
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  min-width: 100%;
+  resize: none;
 }
 .input div:first-child {
   font-size: 2.75em;
