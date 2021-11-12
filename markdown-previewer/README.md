@@ -1,6 +1,6 @@
 ## Screenshot and Demo
 
-[![Redux Text Generator Screen Shot](https://user-images.githubusercontent.com/73409300/140663705-bf60d300-6e27-4f7a-9733-4819bd431f85.png)](https://epic-keller-0c7516.netlify.app/)
+[![Redux Text Generator Screen Shot](https://user-images.githubusercontent.com/73409300/141457788-c35dfb6d-daed-4004-9b90-f669e9363c98.png)](https://epic-keller-0c7516.netlify.app/)
 
 ### Built With
 
