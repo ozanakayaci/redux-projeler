@@ -19,18 +19,18 @@ import {
 
 function Graph() {
   const data = useSelector((state) => state.covid.items);
-  const country = useSelector((state) => state.covid.selectedCountry);
+  const selectedCountry = useSelector((state) => state.covid.selectedCountry);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (country === "Global") {
+    if (selectedCountry === "Global") {
       dispatch(fetchGlobal());
     }
-  }, [dispatch, country]);
+  }, [dispatch, selectedCountry]);
 
   return (
     <div>
-      {country === "Global" ? (
+      {selectedCountry === "Global" ? (
         //for global
         <div className="graph">
           <h4>Confirmed</h4>
@@ -90,7 +90,7 @@ function Graph() {
       ) : (
         //for selected country
         <div className="graph">
-          <h4>{country}</h4>
+          <h4>Current state in {selectedCountry}</h4>
           <ResponsiveContainer width="90%" height={670}>
             <BarChart
               width={500}
@@ -98,8 +98,8 @@ function Graph() {
               data={data}
               margin={{
                 top: 5,
-                right: 40,
-                left: 40,
+                right: 25,
+                left: 25,
                 bottom: 5,
               }}
             >
@@ -111,6 +111,7 @@ function Graph() {
               <Bar dataKey="confirmed" fill="#8884d8" />
               <Bar dataKey="recovered" fill="#82ca9d" />
               <Bar dataKey="deaths" fill="#FF0000" />
+              <Bar dataKey="active" fill="#ECE632" />
             </BarChart>
           </ResponsiveContainer>
         </div>

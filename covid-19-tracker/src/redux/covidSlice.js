@@ -6,9 +6,11 @@ import axios from "axios";
 export const fetchGlobal = createAsyncThunk("datas/getDatas", async () => {
   const res = await axios("https://covid19.mathdro.id/api/daily");
   const modifiedRes = res.data.map((dailyData) => ({
-    confirmed: dailyData.confirmed.total,
-    deaths: dailyData.deaths.total,
     date: dailyData.reportDate,
+    confirmed: dailyData.confirmed.total,
+    recovered: dailyData.recovered.total,
+    deaths: dailyData.deaths.total,
+    active: dailyData.confirmed.total - dailyData.deaths.total,
   }));
   return modifiedRes;
 });
@@ -36,6 +38,7 @@ export const fetchCountry = createAsyncThunk(
         confirmed: res.data.confirmed.value,
         recovered: res.data.recovered.value,
         deaths: res.data.deaths.value,
+        active: res.data.confirmed.value - res.data.deaths.value,
       },
     ];
 

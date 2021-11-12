@@ -16,9 +16,7 @@ function Dropdown() {
 
   useEffect(() => {
     dispatch(fetchCountries());
-    if (selectedCountry === "Global") {
-      return false;
-    } else {
+    if (selectedCountry !== "Global") {
       dispatch(fetchCountry(selectedCountry));
     }
   }, [dispatch, selectedCountry]);
@@ -28,7 +26,7 @@ function Dropdown() {
   };
 
   return (
-    <div>
+    <div className="dropdown">
       <select onChange={handleChange} name="countries" id="countries">
         <option value="Global">Global</option>
         {countries.map((country, i) => (
