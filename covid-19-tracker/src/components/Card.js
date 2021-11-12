@@ -27,7 +27,10 @@ function Card() {
           <div className={`card ${item}`} key={i}>
             <h3>{item}</h3>
             <h2>{countryData[item].toLocaleString("en")}</h2>
-            <p>Last updated at: {countryData.date}</p>
+            <p>
+              Last updated at: <br />
+              {new Date(countryData.date).toDateString()}
+            </p>
             <div>Number of {item} cases of COVID-19</div>
           </div>
         );
