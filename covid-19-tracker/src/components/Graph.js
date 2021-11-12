@@ -59,7 +59,7 @@ function Graph() {
               />
             </LineChart>
           </ResponsiveContainer>
-          <p>Deaths</p>
+          <h4>Deaths</h4>
           <ResponsiveContainer width="90%" height={275}>
             <LineChart
               width={500}
