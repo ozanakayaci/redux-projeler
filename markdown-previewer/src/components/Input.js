@@ -7,15 +7,9 @@ import { useDispatch, useSelector } from "react-redux";
 function Input() {
   const dispatch = useDispatch();
 
-  const [textValue, setTextValue] = useState("");
-
   const text = useSelector((state) => state.text.text);
   const help = useSelector((state) => state.text.help);
   const initialHelp = useSelector((state) => state.text.initialHelp);
-
-  useEffect(() => {
-    help === false ? setTextValue(text) : setTextValue(initialHelp);
-  }, [help, text]);
 
   let handleChange = (e) => {
     dispatch(updateText(e.target.value));
@@ -31,7 +25,7 @@ function Input() {
         id="markdown"
         rows="4"
         cols="20"
-        value={textValue}
+        value={help === false ? text : initialHelp}
       />
     </div>
   );
