@@ -1,6 +1,6 @@
 ## Screenshot and Demo
 
-[![Redux Text Generator Screen Shot](https://user-images.githubusercontent.com/73409300/138496731-9b33f7ef-8bfe-4b68-b233-162a5ce0c274.png)](https://suspicious-saha-b5974c.netlify.app/)
+[![Text Generator Screenshot](https://user-images.githubusercontent.com/73409300/199563584-bca9314b-dab0-4c8b-a660-ce6e34d9a16f.png)](https://suspicious-saha-b5974c.netlify.app/)
 
 ### Built With
 
