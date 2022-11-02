@@ -15,7 +15,7 @@ function Input() {
     dispatch(updateText(e.target.value));
   };
   return (
-    <div className="input">
+    <div className="input width">
       <div>#Markdown</div>
 
       <textarea

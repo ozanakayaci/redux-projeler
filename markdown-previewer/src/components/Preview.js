@@ -18,7 +18,7 @@ function Preview() {
   }, [help, text, initialHelp]);
 
   return (
-    <div className="preview">
+    <div className="preview width">
       <div>
         Preview<span>er</span>
       </div>
