@@ -89,6 +89,13 @@
 .output img {
   width: 100%;
 }
+.output pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 80%;
+  background-color: #ebebeb;
+  border-radius: 10px;
+}
 
 .width {
   width: 50%;
